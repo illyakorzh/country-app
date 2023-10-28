@@ -1,0 +1,39 @@
+.wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 0 5%;
+  transition-duration: 2s;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.wrapperLight {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ffff;
+}
+
+.wrapperDark {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rightSide {
+  cursor: pointer;
+
+}
+
+.rightSide span {
+  margin-left: 10px;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 1rem;
+  }
+}

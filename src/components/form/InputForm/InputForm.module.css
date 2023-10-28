@@ -1,0 +1,15 @@
+.wrapper {
+  transition-duration: 1s;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wrapperLight {
+  background-color: #ffff;
+}
+
+.wrapperDark {
+  background-color: hsl(209, 23%, 22%);
+}
+
+

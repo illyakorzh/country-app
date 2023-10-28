@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.css'
+import { Header } from './components/header/Header';
+import { useContext } from 'react';
+import { ThemeContext } from './providers/ThemeProviders';
+import { router } from './routes';
+import { RouterProvider } from 'react-router-dom';
 
-function App() {
+export function App() {
+  const [theme ] = useContext(ThemeContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${s.App} ${theme === 'Light' ? s.AppLight : s.AppDark}`}>
+      <Header />
+      <RouterProvider router={router} />
     </div>
   );
+
 }
 
-export default App;
+
+

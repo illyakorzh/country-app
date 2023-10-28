@@ -1,0 +1,28 @@
+.wrapperCards{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding: 40px;
+  row-gap: 40px;
+}
+
+@media (max-width: 1600px) {
+  .wrapperCards{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1300px) {
+  .wrapperCards{
+    grid-template-columns:1fr 1fr  1fr;
+  }
+}@media (max-width: 1000px) {
+  .wrapperCards{
+    grid-template-columns:1fr 1fr    ;
+  }
+}
+@media (max-width: 650px) {
+  .wrapperCards{
+    grid-template-columns:1fr    ;
+  }
+}
